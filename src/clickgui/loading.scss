@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loading {
+  $length: 95;
+  $dur: 1s;
+  
+  display: flex;
+  // align-items: center;
+  align-items: end;
+  height: 70px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  span {
+    display: block;
+    margin: 0 5px;
+    border-radius: 50px;
+    width: 10px;
+    height: 100%;
+    background: yellow;
+    animation: loading $dur ease-in-out infinite;  
+  
+    @for $i from 1 through $length {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$dur / $length * $i};
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  50% {
+    opacity: .2;
+    filter: hue-rotate(360deg);
+    height: 20%;
+  }
+}

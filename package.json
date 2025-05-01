@@ -1,0 +1,46 @@
+{
+  "name": "yanjer_moon_prts",
+  "productName": "yanjer_moon_prts",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "鄢桀蚀荼-YanjerTS",
+    "email": "yjtsfankui@hotmail.com",
+    "url": "https://apoxtlebreaker.github.io/ApoxtleBreaker"
+  },
+  "contributors": [
+    {
+      "name": "ApoxtleBreaker",
+      "email": "hidden@hidden.hidden",
+      "url": "unknown://hidden.hidden/hidden?hidden=hidden"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "electron-squirrel-startup": "^1.0.1",
+    "mocha": "11.1.0",
+    "selenium-webdriver": "^4.31.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.0",
+    "@electron-forge/maker-deb": "^7.8.0",
+    "@electron-forge/maker-rpm": "^7.8.0",
+    "@electron-forge/maker-squirrel": "^7.8.0",
+    "@electron-forge/maker-zip": "^7.8.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.0",
+    "@electron-forge/plugin-fuses": "^7.8.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "35.1.5",
+    "sass": "^1.86.3"
+  }
+}

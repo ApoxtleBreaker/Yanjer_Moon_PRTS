@@ -1,0 +1,42 @@
+json里加入记录switch开关状态的字段
+{
+"switch": {
+            "id": "switch_id",
+            "status": {
+                "status": "on/off",
+                "xxx": "100"
+                "xxx": "url"
+            }
+        }
+}
+在初始化的时候forEach每个id 整体上把开关同步  再分别对于每个id的开关状态进行操作
+switch(id)  case xxx: 记录在一个内部对象里
+{
+    "id":{
+        "xxx":"xxx"
+    }
+}
+初次打开设置dialog的时候在对象找到对应值并作为初始值(btn.eventListener)
+后续打开获得对应元素的当前值
+每次关闭时写入一个内部obj记录 并写入json的记录
+对于非开关功能的配置
+{ 
+    "command"{
+            "id": "command_id",
+            "status": {
+            "status": "on/off",
+            "xxx": "100"
+            "xxx": "url"
+            }
+    }
+}
+写在前面和switch同一个obj里 只需要在初始化之后一次打开任意btn的时候同步即可(btn.eventListener)
+
+
+页面初始化后(异步)把所有打开的switch获得id并写入展示元素listF
+点击switch按钮on=>在展示元素里添加该id的项
+off=>删除该id的项
+<listF>
+    >childNode.id=id*n
+</listF>
+

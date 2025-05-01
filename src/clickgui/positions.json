@@ -1,0 +1,56 @@
+{
+  "groupList": {
+    "left": 255,
+    "top": 47
+  },
+  "groupListStatus": {
+    "filesControl": true,
+    "mainFunction": true,
+    "GUIview": true,
+    "funTool": true,
+    "fun": true,
+    "mainController": true,
+    "messageOutput": false
+  },
+  "filesControl": {
+    "left": 1252,
+    "top": 201
+  },
+  "mainFunction": {
+    "left": 77,
+    "top": 297
+  },
+  "GUIview": {
+    "left": 95,
+    "top": 164
+  },
+  "funTool": {
+    "left": 474,
+    "top": 162
+  },
+  "fun": {
+    "left": 111,
+    "top": 383
+  },
+  "mainController": {
+    "left": 281,
+    "top": 166
+  },
+  "switch": {
+    "bgView": {
+      "status": true,
+      "sliderValue": 90,
+      "imageSelect": "custom"
+    },
+    "coverView": {
+      "status": true
+    }
+  },
+  "command": {
+    "id": "command_id_unset",
+    "status": {
+      "unset": "unset"
+    }
+  },
+  "notice!!!": "预览图状态写入会识别错误在最后多加一个}"
+}

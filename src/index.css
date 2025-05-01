@@ -1,0 +1,54 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+#headBar{
+  background-color: rgba(96, 96, 96, 0.311);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+#bg{
+  background-image: url(../resources/main/assets/bg/enGu.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.btn{
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+  aspect-ratio: 1/1;
+}
+.btn:hover{
+  background-color: #3e8e41;
+}
+.btn:active{
+  background-color: #3e8e41;
+  box-shadow: inset 0 0 30px #000000;
+  transform: translateY(4px);
+}
+body{
+  overflow-y: hidden;
+}

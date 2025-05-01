@@ -1,0 +1,185 @@
+:root{
+  --mainColor : #00497a;
+  --secondColor : #3498db;
+  --contrastColor : #f1c40f;
+  --lightColor : #ebebeb;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slipInRight {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slipOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+  
+  #headBar{
+    background-color: rgba(96, 96, 96, 0.311);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+
+  }
+  bg{
+    display: block;
+    background-image: url(../../resources/main/assets/bg/color.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* -webkit-app-region: drag; */
+    /* app-region: drag; */
+  }
+  listF{
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #00497a;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: end;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    >div{
+      position: relative;
+      background-color: #f1c40f;
+      text-align: end;
+      display: inline-block;
+      width: fit-content;
+      margin: auto 0;
+      height: fit-content;
+      animation: slipInRight 0.2s ease-in-out;  
+    }
+  }
+  
+dialog{
+  margin: auto;
+  padding: 10px;
+  /* overflow: hidden; */
+  overflow: visible;
+  background-color: var(--lightColor);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:active{
+    background-color: var(--secondColor);
+    color: var(--lightColor);
+  }
+  >cancle{
+    display: block;
+    position: absolute;
+    top: -30%;
+    /* transform: translateY(-100%); */
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      transform: rotate(90deg);
+      transition: all 0.3s ease;
+    }
+  }
+  .rangeInput{
+    -webkit-appearance: none; /* 移除默认样式 */
+    appearance: none; /* 移除默认样式 */
+    width: 100%; /* 滑块宽度 */
+    height: 8px; /* 滑块高度 */
+    background: #3498db; /* 滑块背景颜色 */
+    border-radius: 5px; /* 圆角 */
+    outline: none; /* 移除聚焦时的边框 */
+    transition: background 0.3s ease; /* 背景颜色过渡效果 */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; /* 移除默认样式 */
+      appearance: none; /* 移除默认样式 */
+      width: 10px; /* 圆点宽度 */
+      height: 20px; /* 圆点高度 */
+      border-radius: 0; /* 圆角 */
+      background: var(--mainColor); /* 圆点背景颜色 */
+      cursor: pointer; /* 鼠标指针 */
+      transition: background 0.3s ease; /* 背景颜色过渡效果 */
+    }
+    &:hover {
+      background: #34db90; /* 圆点悬停颜色 */
+    }
+  }
+}
+
+
+.menu{
+  width: 180px;
+  background-color: #9c9c9c92;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  /* 默认隐藏 */
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+.menu li{
+  list-style-type: none;
+  padding: 12px;
+  background-color: #ffffff69;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.menu li:hover{
+  transition: all 0.3s ease;
+  background-color: var(--secondColor);
+  color: #fff;
+}

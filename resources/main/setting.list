@@ -1,0 +1,20 @@
+{
+    "appSetting": {
+        "theme": ["dark", "light"],
+        "language": ["en-US", "zh-CN"],
+        "ui": {
+            "backgrond": {
+                "color": ["#000000", "rgba(255, 255, 255, 0.8)", "hsl(210, 50%, 50%)", "red"],
+                "image": ["url('path/to/image.jpg')","https://example.com/image.jpg"],
+                "position": "center/left/right/top/bottom",
+                "size": "cover/contain",
+                "repeat": "no-repeat/repeat/repeat-x/repeat-y"
+            },
+            "font": {
+                "family": "",
+                "size": "",
+                "color": ""
+            }
+        }
+    }
+}

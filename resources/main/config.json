@@ -1,0 +1,25 @@
+{
+  "URL": {
+    "User_B_UID": "1979641484",
+    "User_B_LiveRoom": [
+      24459881,
+      173586,
+      114514
+    ],
+    "User_B_LiveRoom_Name": [
+      "鄢桀使徒-YanjerTS'",
+      "恩骨",
+      "阿伟"
+    ],
+    "Login_BiliBili": "https://passport.bilibili.com/login",
+    "Main_Live": "https://link.bilibili.com/p/center/index#/my-room/start-live",
+    "Main_Creator": "https://member.bilibili.com/platform/home",
+    "Main_Post": "https://member.bilibili.com/platform/upload/video/frame",
+    "Main_Space": "https://t.bilibili.com/",
+    "Main_Message": "https://message.bilibili.com/",
+    "Personal_Favourite": "https://space.bilibili.com/{b_uid}/favlist",
+    "Personal_Space": "https://space.bilibili.com/{b_uid}",
+    "Live_Room": "https://live.bilibili.com/{room_id}",
+    "Live_Home": "https://live.bilibili.com/"
+  }
+}
